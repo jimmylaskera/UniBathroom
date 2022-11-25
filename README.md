@@ -1,18 +1,22 @@
-## Getting Started
+## Trabalho Prático: Mecanismos de Sincronização
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+O objetivo deste trabalho é estimular o projeto e implementação de soluções para problemas por meio de programação concorrente, mais especificamente colocando em prática os conceitos e mecanismos de sincronzação de processos/threads.
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+##  O Problema: O Banheiro Unissex
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Um escritório contém um banheiro que pode ser utilizado tanto por homens quanto por mulheres, mas não por ambos ao mesmo tempo. Se um homem estiver no banheiro, outros homens podem entrar, porém eventuais mulheres que desejem utilizar o banheiro devem esperar ele ficar vazio. Se uma mulher estiver no banheiro, outras mulheres podem entrar, porém eventuais homens que desejem utilizar o banheiro devem esperar ele ficar vazio. Cada pessoa (homem ou mulher) pode passar um determinado tempo utilizando o banheiro, que possui uma capacidade limite de pessoas que podem utilizá-lo ao mesmo tempo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Instruções De Execução
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Uma vez que o repositório seja devidamente clonado ou baixado em seu computador, basta executar a classe `App.java`; caso deseje informar a capacidade do banheiro e o número de pessoas, deve-se inserir na linha de comando, em ordem:
 
-## Dependency Management
+•	O número da capacidade do banheiro; 
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+•	O número de homens; 
+
+•	O número de mulheres.
+
+Caso contrário, estes valores serão pré-definidos.
+
+
